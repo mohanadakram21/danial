@@ -1,0 +1,635 @@
+
+ .navbar-nav > li > a {
+    color: white !important;
+    margin: 0 15px;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+  }
+  
+  .navbar-nav {
+    
+    text-align: center;
+}
+  
+
+  
+  .navbar.scrolled {
+    background-color: white; 
+    
+    
+  }
+
+  .navbar.scrolled li > a {
+    color: black !important; 
+    
+  }
+
+  .navbar.scrolled li > a.nav-link.active::after{
+    background-color: black;
+  }
+
+  .navbar.scrolled .nav-home {
+    color: black !important; 
+    
+  }
+  .nav-home {
+    color: white;
+  }
+  .navbar-nav > li >.nav-link{
+    position: relative;
+  }
+  .navbar-nav > li >.nav-link.active::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: white;
+   
+    
+}
+
+
+
+
+
+
+
+.nav-underline .nav-link {position: relative;
+border-bottom: transparent;
+}
+
+.nav-underline .nav-link.active:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: black;
+   
+    
+}
+
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,.7)) , url(../Daniels/imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+.home-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.home-text h1{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.home-text h2 span{
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      
+
+}
+.home-text h2::after{
+    content: '';
+    animation-name: typing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes typing {
+    0%{
+        content: 'web design|';
+    }
+    2%{
+content: 'we|'
+    }
+    5%{
+content: 'web|'
+    }
+    7%{
+content: 'web d|'
+    }
+    10%{
+content: 'web de|'
+    }
+    12%{
+        content: 'web des';
+    }
+    15%{
+content: 'web desi|'
+    }
+    17%{
+content: 'web desig|'
+    }
+    20%{
+content: 'web design|'
+    }
+    22%{
+content: 'web desig|'
+    }
+    25%{
+        content: 'web desi';
+    }
+    27%{
+content: 'web des|'
+    }
+    30%{
+content: 'web de|'
+    }
+    32%{
+content: 'web d|'
+    }
+    35%{
+content: 'web|'
+    }
+    37%{
+        content: 'we|';
+    }
+    40%{
+content: 'w|'
+    }
+    42%{
+content: 'we|'
+    }
+    45%{
+content: 'web|'
+    }
+    47%{
+content: 'web d|'
+    }
+    50%{
+        content: 'web de|';
+    }
+    52%{
+        content: 'web dev|';
+    }
+    55%{
+        content: 'web deve|';
+    }
+    57%{
+        content: 'web devel|';
+    }
+    60%{
+        content: 'web develo|';
+    }
+    62%{
+        content: 'web develop|';
+    }
+    65%{
+        content: 'web developer|';
+    }
+    67%{
+        content: 'web develope|';
+    }
+    70%{
+        content: 'web develop|';
+    }
+    72%{
+        content: 'web develo|';
+    }
+    75%{
+        content: 'web devel|';
+    }
+    77%{
+        content: 'web deve|';
+    }
+    78%{
+        content: 'web dev|';
+    }
+    80%{
+        content: 'web de|';
+    }
+    81%{
+        content: 'web d|';
+    }
+    82%{
+        content: 'web |';
+    }
+    83%{
+        content: 'we|';
+    }
+    84%{
+        content: 'w|';
+    }
+    85%{
+        content: 'M|';
+    }
+    86%{
+        content: 'mo|';
+    }
+    87%{
+        content: 'moh|';
+    }
+    88%{
+        content: 'moha|';
+    }
+    89%{
+        content: 'mohan|';
+    }
+    90%{
+        content: 'mohane|';
+    }
+    91%{
+        content: 'mohaned|';
+    }
+    92%{
+        content: 'mohane|';
+    }
+    93%{
+        content: 'mohan|';
+    }
+    94%{
+        content: 'moha|';
+    }
+    95%{
+        content: 'moh|';
+    }
+    96%{
+        content: 'mo|';
+    }
+    97%{
+        content: 'm|';
+    }
+    98%{
+        content: 'w|';
+    }
+    99%{
+        content: 'we|';
+    }
+    100%{
+        content: 'web|';
+    }
+    
+    
+}
+.icon-home i{
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+.icon-home{
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.firstpage{
+    margin: 50px 0;
+}
+.f-text .btn a{
+    padding: 10px 50px;
+    border: 2px solid black;
+    
+    
+}
+.f-text .btn {
+margin: 30px 0;
+text-decoration: none;
+
+}
+.f-text .btn .btn1{
+    background-color: black ;
+    color: white;
+    text-decoration: none;
+}
+.f-text .btn .btn1:hover{
+    background-color: white;
+    color: black;
+}
+.f-text .btn .btn2{
+color: black;
+text-decoration: none;
+}
+.f-text .btn .btn2:hover{
+    background-color: black;
+    color: white;
+}
+
+.f-img{
+    position: relative;
+    width: 80%;
+    margin: 0 10px;
+    
+}
+.dot{
+    margin-top: 130px;
+    width: 300px;
+    height: 350px; 
+    background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+    background-size: 10px 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.imgage img{
+    position: absolute;
+    top: 0;
+    left: 40px;
+bottom: 5px;
+right: 0;
+
+}
+.imgage img{
+    width: 100%;
+}
+
+.secondpage{
+    background-color: #F7F7F7;
+}
+.secondpage h2{
+   
+margin: 20px auto;
+padding: 35px 10px;
+width: 200px;
+height: 30px; 
+background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+background-size: 10px 10px; 
+display: flex;
+justify-content: center;
+align-items: center; 
+font-size: 64px;
+}
+
+    .s-h2{
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+   
+
+.secondpage .card i{
+    
+    border: 5px  ;
+    border-radius: 50%;
+    color: black;
+    background-color: #F7F7F7;
+    padding: 30px;
+    margin: 20px 40px;
+    text-align: end;
+}
+.secondpage .card{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; 
+    margin-bottom: 50px; 
+}
+.secondpage .card:hover i{
+color: white;
+background-color: black;
+}
+
+
+
+ .img-portfolio .item .inner{
+    position: relative;
+
+}
+ .img-portfolio .item .layer{
+    background-color: rgba(0,0,0,0.0);
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.img-portfolio .item .layer i{
+    overflow: hidden ;
+    text-align: center;
+    opacity: 0;
+    margin:auto;
+   
+}
+
+.img-portfolio .item .layer h2{
+    opacity: 0;
+}
+.img-portfolio .item .layer:hover i{
+    opacity: 1;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+.img-portfolio .item .layer i:hover{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+
+}
+
+.img-portfolio .item .layer:hover h2{
+    opacity: 1;
+}
+
+ .img-portfolio .item img {
+    width: 100%;
+    display: block;
+}
+ .img-portfolio .item :hover{
+    background-color: rgba(255, 255, 255, 0.589);
+}
+.img-portfolio .item .layer:hover{
+    width: 390px;
+height: 330px;
+margin: auto;
+
+}
+.nav-pills .nav-link.active{
+    color: black;
+    background-color: transparent;
+}
+
+.nav-pills .nav-link{
+    color: black;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+.fourpage{
+    background-color: #F7F7F7;
+}
+.fourpage h2{
+    margin: 20px auto;
+    padding: 35px 10px;
+    width: 400px;
+    height: 30px; 
+    background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+    background-size: 10px 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 64px;
+}
+.carousel-item img{
+    width: 10%;
+}
+.carousel-item{
+    margin-bottom: 40px;
+}
+.fivepage{
+    min-height: auto;
+    margin: 20px 0;
+}
+.fivepage .iconthird i{
+    padding: 40px 10px;
+    margin: 25px 0;
+    
+}
+.fivepage .iconthird h4{
+    margin: 35px 0;
+padding: 30px 0;
+}
+.sixpage .card{
+    margin: 20px 0;
+    overflow: hidden;
+}
+.sixpage .card img{
+width: 100%;
+}
+.sixpage .card .card-body{
+background-color: grey;
+}
+.sixpage{
+    background-color: #F7F7F7;
+}
+.sixpage .card .layer{
+    position: absolute;
+background-color: rgba(0,0,0,0.0);
+inset: 0;
+overflow: hidden;
+align-content: center;
+justify-content: center;
+text-align: center;
+
+}
+.sixpage .card .layer i{
+    opacity: 0;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+    .sixpage .card .layer:hover{
+background-color: rgb(255, 255, 255);
+width: 315px;
+height: 330px;
+margin: auto;
+
+    }
+    .sixpage .card:hover .layer{
+        transform: rotateY(360deg);
+transition-duration: 2s;
+    }
+
+    .sixpage .card:hover img{
+        overflow: hidden;
+        transform: scale(2, 1);
+        transition-duration: 1s;
+
+    }
+    .sixpage .card .inner{
+overflow: hidden;
+    }
+
+    .sixpage .card .layer:hover i{ 
+       
+    opacity: 1;}
+
+    .sixpage .card .layer i:hover{ background-color: white;
+        color: black;}
+.sixpage .card .inner{
+position: relative;
+}
+
+.info i{
+    padding: 25px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: grey;
+    color: black;
+}
+.info i:hover{
+
+    background-color: black;
+    color: aliceblue;
+}
+
+@media screen and (max-width:991px) {
+    /* #navbarSupportedContent .nav-item ul{
+        position: fixed;
+        width: 100%;
+        background-color: white;
+      } */
+       .navbar-nav{
+        background-color: white;
+    }
+    .navbar-nav > li > a{
+           color: black  !important;
+       }
+}
+
+@media screen and (min-width: 600px) {
+    .imgage img{
+        width: 70%;
+    }
+}
+@media (min-width:992px) {
+    .secondpage  .col-lg-3 {
+        flex: 0 0 auto;
+        width: 32%;
+    }
+   
+}
+@media screen and (min-width: 1200px){
+    .imgage img{
+        width: 59%;
+    }
+    
+    .f-img{
+        width: 50%;
+    }
+    .f-text{
+        width: 47%;
+    }
+    .firstpage{
+        display: flex;
+    }
+}  
